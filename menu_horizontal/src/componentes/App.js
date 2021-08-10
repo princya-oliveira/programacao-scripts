@@ -4,6 +4,18 @@ import './App.css';
 function App() {
   return (
     <div>
+      <header id="corpo">
+        <nav id="menu">
+          <ul>
+            <li><a href = "#inicio">Home</a> </li>
+            <li><a href = "#cursos">Cursos</a> </li>
+            <li><a href = "#contatos">Contatos</a> </li>
+            <li><a href = "#parceiros">Parceiros</a> </li>
+            <li><a href = "#missao">Missão</a> </li>
+            <li><a href = "#sobre">Sobre</a> </li>
+          </ul>
+        </nav>
+      </header>
       <section id="inicio">
         <h2>Início</h2>
       </section>
