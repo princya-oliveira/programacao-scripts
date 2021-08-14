@@ -1,0 +1,131 @@
+/*
+  Configuração do menu horizontal
+*/
+.menu {
+  height: 40px;
+  border: 1px solid rgb(214, 46, 16);
+  background-color: #F23005;
+  padding-bottom: 8px;
+  font-size: 16px;
+}
+
+.navMenu ul {
+  list-style: none;
+  text-align: left;
+}
+
+.navMenu ul li{
+  display: inline;
+}
+
+.navMenu ul li a{
+  padding-left: 1.2vw;
+  display: inline-block;
+  color:white;
+  text-decoration: none;
+}
+
+.navMenu ul li a:hover {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/*
+  Final das configurações do menu horizontal
+*/
+
+/*
+  Início das configurações das seções
+*/
+#inicio, #cursos, #contatos, #parceiros, #missao, #sobre, footer {
+  text-align: center;
+  border: 1px solid black;
+}
+
+#inicio {
+  height: 35vh;
+  background-color: blue;
+}
+
+#cursos {
+  height: 40vh;
+  background-color: yellow;
+}
+
+#contatos {
+  height: 20vh;
+  background-color: green;
+}
+
+#parceiros {
+  height: 60vh;
+  background-color: silver;
+}
+
+#missao {
+  height: 20vh;
+  background-color: cyan;
+}
+
+#sobre {
+  height: 40vh;
+  background-color: brown;
+}
+
+footer {
+  height: 20vh;
+  background-color: #F23005;
+}
+
+/*
+  Configurações do retorno das âncoras laterais
+*/
+.irTopo, .irInicio, .irCursos, .isContatos, .irParceiros, .irMissao, .irSobre, .irFooter {
+  font-size: 12px;
+  padding: 1vh;
+  position: fixed;
+  transition: 0.2s;
+  right: 1vh;
+  text-decoration: none;
+  width: 90px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;  
+}
+
+.irTopo {
+  bottom: 14vh;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.irTopo:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.irInicio {
+  bottom: 75vh;
+  color: black;
+  background-color: bisque;
+}
+
+.irInicio:hover {
+  background-color: darkorange;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.irCursos {
+  bottom: 71vh;
+  color: black;
+  background-color: bisque;
+}
+
+.irCursos:hover {
+  background-color: darkorange;
+  font-weight: bold;
+  font-size: 16px;
+}

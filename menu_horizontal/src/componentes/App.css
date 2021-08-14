@@ -1,35 +1,3 @@
-#inicio {
-  height: 40vh;
-  border: 1px solid black;
-  background-color: blue;
-}
-
-#cursos {
-  height: 90vh;
-  border: 1px solid black;
-  background-color: yellow;
-}
-
-#contatos {
-  height: 20vh;
-  border: 1px solid black;
-  background-color: green;
-}
-
-#parceiros {
-  height: 60vh;
-  border: 1px solid black;
-  background-color: silver;
-}
-
-#missao {
-  height: 20vh;
-  border: 1px solid black;
-  background-color: cyan;
-}
-
-#sobre {
-  height: 40vh;
-  border: 1px solid black;
-  background-color: brown;
+.App {
+  text-align: center;
 }
