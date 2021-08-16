@@ -59,7 +59,7 @@
 }
 
 #parceiros {
-  height: 60vh;
+  height: 50vh;
   background-color: silver;
 }
 
@@ -81,7 +81,7 @@ footer {
 /*
   Configurações do retorno das âncoras laterais
 */
-.irTopo, .irInicio, .irCursos, .isContatos, .irParceiros, .irMissao, .irSobre, .irFooter {
+.irTopo, .irInicio, .irCursos, .irContatos, .irParceiros, .irMissao, .irSobre, irFooter {
   font-size: 12px;
   padding: 1vh;
   position: fixed;
@@ -90,8 +90,12 @@ footer {
   text-decoration: none;
   width: 90px;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 4px;  
+  border-radius: 4px;
+}
+
+.irTopo:hover, .irInicio:hover, .irCursos:hover, .irContatos:hover {
+  font-weight: bold;
+  font-size: 15px;
 }
 
 .irTopo {
@@ -102,30 +106,64 @@ footer {
 
 .irTopo:hover {
   background-color: rgba(0, 0, 0, 0.6);
-  font-weight: bold;
-  font-size: 16px;
 }
 
 .irInicio {
   bottom: 75vh;
-  color: black;
-  background-color: bisque;
+  color: green;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .irInicio:hover {
-  background-color: darkorange;
-  font-weight: bold;
-  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .irCursos {
-  bottom: 71vh;
-  color: black;
-  background-color: bisque;
+  bottom: 70vh;
+  color: green;
+  background-color: cyan;
 }
 
 .irCursos:hover {
-  background-color: darkorange;
-  font-weight: bold;
-  font-size: 16px;
+  background-color: darkblue;
+}
+
+.irContatos {
+  bottom: 65vh;
+  color: blueviolet;
+  background-color: blanchedalmond;
+}
+
+.irContatos:hover {
+  background-color: aquamarine;
+}
+
+.irParceiros {
+  bottom: 60vh;
+  color: blueviolet;
+  background-color: blanchedalmond;
+}
+
+.irParceiros:hover {
+  background-color: aquamarine;
+}
+
+.irMissao {
+  bottom: 65vh;
+  color: blueviolet;
+  background-color: blanchedalmond;
+}
+
+.irMissao:hover {
+  background-color: aquamarine;
+}
+
+.irSobre {
+  bottom: 65vh;
+  color: blueviolet;
+  background-color: blanchedalmond;
+}
+
+.irSobre:hover {
+  background-color: aquamarine;
 }

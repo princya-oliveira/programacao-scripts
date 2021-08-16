@@ -7,12 +7,12 @@ export default function Secoes() {
       <div className="menu">
         <nav className="navMenu">
           <ul>
-            <li><a href = "#inicio">Home</a> </li>
-            <li><a href = "#cursos">Cursos</a> </li>
-            <li><a href = "#contatos">Contatos</a> </li>
-            <li><a href = "#parceiros">Parceiros</a> </li>
-            <li><a href = "#missao">Missão</a> </li>
-            <li><a href = "#sobre">Sobre</a> </li>
+            <li><a href = "#inicio">Home</a></li>
+            <li><a href = "#cursos">Cursos</a></li>
+            <li><a href = "#contatos">Contatos</a></li>
+            <li><a href = "#parceiros">Parceiros</a></li>
+            <li><a href = "#missao">Missão</a></li>
+            <li><a href = "#sobre">Sobre</a></li>
           </ul>
         </nav>
       </div>
@@ -41,13 +41,13 @@ export default function Secoes() {
         <h3>Sobre</h3>
       </section>
       
-      <a classname = "irTopo" href = ".menu"> Topo </a>
-      <a classname = "irInicio" href = "#inicio"> Início </a>
-      <a classname = "irCursos" href = "#cursos"> Cursos </a>
-      <a classname = "irContatos" href = "#contatos"> Contatos </a>
-      <a classname = "irParceiros" href = "#parceiros"> Parceiros </a>
-      <a classname = "irMissao" href = "#missao"> Missão </a>
-      <a classname = "irSobre" href = "#sobre"> Sobre </a>
+      <a className="irTopo" href = ".menu"> Topo </a>
+      <a className="irInicio" href = "#inicio"> Início </a>
+      <a className="irCursos" href = "#cursos"> Cursos </a>
+      <a className="irContatos" href = "#contatos"> Contatos </a>
+      <a className="irParceiros" href = "#parceiros"> Parceiros </a>
+      <a className="irMissao" href = "#missao"> Missão </a>
+      <a className="irSobre" href = "#sobre"> Sobre </a>
 
       <footer>
         <h3>Rodapé</h3>
