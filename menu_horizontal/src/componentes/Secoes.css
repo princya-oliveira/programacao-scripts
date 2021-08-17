@@ -45,7 +45,7 @@
 
 #inicio {
   height: 35vh;
-  background-color: blue;
+  background-color:#f29f05;
 }
 
 #cursos {
@@ -93,14 +93,14 @@ footer {
   border-radius: 4px;
 }
 
-.irTopo:hover, .irInicio:hover, .irCursos:hover, .irContatos:hover {
+.irTopo:hover, .irInicio:hover, .irCursos:hover, .irContatos:hover, .irParceiros:hover, .irMissao:hover, .irSobre:hover {
   font-weight: bold;
   font-size: 15px;
 }
 
 .irTopo {
   bottom: 14vh;
-  color: white;
+  color: black;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -110,7 +110,7 @@ footer {
 
 .irInicio {
   bottom: 75vh;
-  color: green;
+  color: black;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -120,28 +120,28 @@ footer {
 
 .irCursos {
   bottom: 70vh;
-  color: green;
-  background-color: cyan;
+  color: black;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .irCursos:hover {
-  background-color: darkblue;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .irContatos {
   bottom: 65vh;
-  color: blueviolet;
-  background-color: blanchedalmond;
+  color: black;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .irContatos:hover {
-  background-color: aquamarine;
+  background-color: rgb(112, 156, 141);
 }
 
 .irParceiros {
   bottom: 60vh;
-  color: blueviolet;
-  background-color: blanchedalmond;
+  color: black;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .irParceiros:hover {
@@ -149,9 +149,9 @@ footer {
 }
 
 .irMissao {
-  bottom: 65vh;
-  color: blueviolet;
-  background-color: blanchedalmond;
+  bottom: 55vh;
+  color: black;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .irMissao:hover {
@@ -159,11 +159,60 @@ footer {
 }
 
 .irSobre {
-  bottom: 65vh;
-  color: blueviolet;
-  background-color: blanchedalmond;
+  bottom: 50vh;
+  color: black;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .irSobre:hover {
   background-color: aquamarine;
+}
+/*
+  Configurações do aside (menu laterial esquerdo)
+*/
+.aside a {
+  position: fixed;
+  left: -5vw;
+  transition: .2s;
+  padding: 1vh;
+  width: 4.5vw;
+  text-decoration: none;
+  font-size: 10px;
+  color: #fff;
+  border-radius: 0 6px 6px 0;
+  font-weight: bold;
+}
+
+.aside a:hover {
+  left: 0;
+}
+
+#inicio2 {
+  top: 20vh;
+  background-color: blue;
+}
+
+#curso2 {
+  top: 25vh;
+  background-color: red;
+}
+
+#contatos2 {
+  top: 30vh;
+  background-color: green;
+}
+
+#parceiros2 {
+  top: 35vh;
+  background-color: violet;
+}
+
+#missao2 {
+  top: 40vh;
+  background-color: yellow;
+}
+
+#sobre2 {
+  top: 45vh;
+  background-color: orangered;
 }
