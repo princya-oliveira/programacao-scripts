@@ -1,5 +1,5 @@
 import React from 'react';
-import './Secoes.css';
+import './componentes/Secoes/Secoes.js';
 
 export default function Secoes() {
   return (

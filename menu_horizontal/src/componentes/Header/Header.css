@@ -1,0 +1,36 @@
+/*
+  Configuração do menu horizontal
+*/
+.menu {
+    height: 40px;
+    border: 1px solid rgb(214, 46, 16);
+    background-color: #F23005;
+    padding-bottom: 8px;
+    font-size: 16px;
+
+    position: fixed;
+    top: 0;
+    width: 100vw;
+  }
+  
+  .navMenu ul {
+    list-style: none;
+    text-align: left;
+  }
+  
+  .navMenu ul li{
+    display: inline;
+  }
+  
+  .navMenu ul li a{
+    padding-left: 1.2vw;
+    display: inline-block;
+    color:white;
+    text-decoration: none;
+  }
+  
+  .navMenu ul li a:hover {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+  }
