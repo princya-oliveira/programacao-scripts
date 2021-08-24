@@ -2,7 +2,9 @@
   Configuração do menu horizontal
 */
 .titulo {
-  height: 4vh;
+  height: 5vh;
   background-color: rgb(166, 245, 159);
   border: 1px solid darkorange;
+  position: relative;
+  top: 7vh;
 }
