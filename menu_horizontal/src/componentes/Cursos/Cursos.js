@@ -7,12 +7,11 @@ import CursosHeader from './CursosHeader.js'
 export default function Cursos() {
     return(
         <>
-                <Titulo texto="Seção cursos" />
+            <CursosHeader />
+            <Titulo texto="Seção cursos" />
                 
-            <div className='cursos'>
+            <div className='cursos'> 
                 
-                <CursosHeader />
-
             </div>
         </>
     )
