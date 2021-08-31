@@ -2,6 +2,7 @@ import React from 'react'
 
 import './Inicio.css'
 import Titulo from '../Titulo/Titulo.js'
+import Logo from '../../imagens/LogoFatec.jpeg'
 
 export default function Inicio() {
     return(
@@ -11,7 +12,12 @@ export default function Inicio() {
             <div className='inicio'>
                 <button id="confirmar">Confirmar</button>
                 <button id="salvar" onClick={() => {alert('Clicado')}}>Salvar</button>
+
+                <figure>
+                    <img id="logo" src={Logo} align="center" />
+                </figure>
             </div>
+           
         </>
     )
 }
