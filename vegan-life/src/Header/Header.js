@@ -8,7 +8,6 @@ export default function Header() {
         <header className='menu'>
             <nav className="navMenu">
                 <ul>
-                    <li><Link to ="/">Home</Link></li>
                     
                 </ul>
             </nav>
