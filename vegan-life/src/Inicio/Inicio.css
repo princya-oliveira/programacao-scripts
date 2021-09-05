@@ -1,4 +1,4 @@
-.inicio {
+.interface {
   background-color: #FECE01;
   height: 100vh;
   display: flex;
@@ -51,3 +51,45 @@
   margin-left: 15rem;
   margin: 0rem;
 }
+
+/*
+  Configurações do menu lateral
+*/
+
+.aside a {
+  position: fixed;
+  left: -5vw;
+  transition: .2s;
+  padding: 3vh;
+  width: 8vw;
+  text-decoration: none;
+  font-size: 10px;
+  color: #fff;
+  border-radius: 0 6px 6px 0;
+  font-weight: bold;
+}
+
+.aside a:hover {
+  left: 0;
+}
+
+#inicio {
+  top: 45vh;
+  background-color: #9C00FD;
+}
+
+#sobre {
+  top: 53vh;
+  background-color: #E90128;
+}
+
+#cadastro {
+  top: 61vh;
+  background-color: #FD8C00;
+}
+
+#guia {
+  top: 69vh;
+  background-color: #02B4FE;
+}
+
