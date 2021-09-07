@@ -1,0 +1,40 @@
+/*
+  Configurações do aside (menu laterial esquerdo)
+*/
+
+#inicio2, #sobre2, #cadastro2, #guia2 {
+    position: fixed;
+    left: -5vw;
+    transition: .2s;
+    padding: 2.5vh;
+    width: 8vw; 
+    text-decoration: none;
+    font-size: 12px;
+    color: black;
+    border-radius: 0 6px 6px 0;
+    font-weight: bold;
+}
+
+.inicio2:hover, .cadastro2:hover, .sobre:hover, .guia:hover {
+    left: 0;
+}
+
+#inicio2 {
+    top: 40vh;
+    background-color: #9C00FD;
+}
+  
+#sobre2 {
+    top: 48vh;
+    background-color: #E90128;
+}
+  
+#cadastro2 {
+    top: 56vh;
+    background-color: #FD8C00;
+}
+  
+#guia2 {
+    top: 64vh;
+    background-color: #02B4FE;
+}
