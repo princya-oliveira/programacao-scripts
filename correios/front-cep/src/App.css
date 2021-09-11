@@ -44,5 +44,24 @@
 }
 
 #consultar {
-  padding-top: 5px;
+  padding-top: 10px;
 }
+
+.container {
+  padding-top: 15px;
+  border: 1px solid blue;
+  width: 550px;
+}
+
+#nome {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  width: 500px;
+}
+
+#cep {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  width: 200px;
+}
+
