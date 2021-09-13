@@ -1,0 +1,10 @@
+.titulo {
+  height: 0vh;
+  background-color: transparent;
+  border: 0;
+  position: relative;
+  top: 7vh;
+  margin-left: 55px;
+  font-size: 30px;
+  color: white;
+}
