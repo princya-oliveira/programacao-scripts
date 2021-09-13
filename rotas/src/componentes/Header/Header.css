@@ -2,18 +2,18 @@
   Configuração do menu horizontal
 */
 .menu {
-    height: 40px;
+    height: 45px;
     border: 0;
     background-color: #213A40;
     padding-bottom: 8px;
     font-size: 16px;
-    position: relative;
+    position: fixed;
     top: 0;
     width: 100vw;
   }
   
   .menu2 {
-    height: 40px;
+    height: 45px;
     border: 0;
     background-color: #213A40;
     padding-bottom: 8px;

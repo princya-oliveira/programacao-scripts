@@ -1,11 +1,13 @@
 import React from 'react'
 import Titulo from '../../../../Titulo/Titulo'
-import AmericaSulHeader from '../AmericaSulHeader'
+import PantanalHeader from '../Info/PantanalHeader'
+
+import './Info.css'
 
 export default function Pantanal() {
     return (
         <>  
-            <AmericaSulHeader />
+            <PantanalHeader />
 
             <Titulo text="Pantanal" />
 

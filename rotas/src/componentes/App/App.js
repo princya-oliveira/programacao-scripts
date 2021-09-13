@@ -16,9 +16,9 @@ import Equador from "../America/Americas/Equador/Equador"
 import Inferiores from "../America/Americas/Inferiores/Inferiores"
 import Patagonia from "../America/Americas/AmericaSul/Info/Patagonia"
 import CordilheiraAndes from "../America/Americas/AmericaSul/Info/CordilheiraAndes"
-import Cortagena from "../America/Americas/AmericaSul/Info/Cortagena"
+import Cartagena from "../America/Americas/AmericaSul/Info/Cartagena"
 import Pantanal from "../America/Americas/AmericaSul/Info/Pantanal"
-import Quilhotoa from "../America/Americas/AmericaSul/Info/Quilhotoa"
+import Quilotoa from "../America/Americas/AmericaSul/Info/Quilotoa"
 import Hidrografia from "../America/Americas/AmericaSul/Info/Pantanal/Hidrografia"
 import Clima from "../America/Americas/AmericaSul/Info/Pantanal/Clima"
 import Fauna from "../America/Americas/AmericaSul/Info/Pantanal/Fauna"
@@ -46,9 +46,9 @@ function App() {
           <Route exact path = "/america/inferiores" render = {(props) => <Inferiores/>}></Route>
           <Route exact path = "/america/americaSul/patagonia" render = {(props) => <Patagonia/>}></Route>
           <Route exact path = "/america/americaSul/cordilheiraAndes" render = {(props) => <CordilheiraAndes/>}></Route>
-          <Route exact path = "/america/americaSul/cortagena" render = {(props) => <Cortagena/>}></Route>
+          <Route exact path = "/america/americaSul/cartagena" render = {(props) => <Cartagena/>}></Route>
           <Route exact path = "/america/americaSul/pantanal" render = {(props) => <Pantanal/>}></Route>
-          <Route exact path = "/america/americaSul/quilhotoa" render = {(props) => <Quilhotoa/>}></Route>
+          <Route exact path = "/america/americaSul/quilotoa" render = {(props) => <Quilotoa/>}></Route>
           <Route exact path = "/america/americaSul/pantanal/hidrografia" render = {(props) => <Hidrografia/>}></Route>
           <Route exact path = "/america/americaSul/pantanal/clima" render = {(props) => <Clima/>}></Route>
           <Route exact path = "/america/americaSul/pantanal/fauna" render = {(props) => <Fauna/>}></Route>

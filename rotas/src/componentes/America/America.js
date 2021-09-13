@@ -4,7 +4,6 @@ import AmericaHeader from './AmericaHeader.js'
 
 import './America.css'
 
-
 export default function America() {
     return(
         <>

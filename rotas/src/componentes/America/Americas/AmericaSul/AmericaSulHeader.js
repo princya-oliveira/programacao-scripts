@@ -15,7 +15,7 @@ export default function AmericaSulHeader() {
                         <li><Link to="/america/americaSul/cordilheira">Cordilheira dos Andes</Link></li>
                         <li><Link to="/america/americaSul/cartagena">Cartagena</Link></li>
                         <li><Link to="/america/americaSul/pantanal">Pantanal</Link></li>
-                        <li><Link to="/america/americaSul/quilhotoa">Vulcão Quilhotoa</Link></li>
+                        <li><Link to="/america/americaSul/quilotoa">Vulcão Quilotoa</Link></li>
                     </ul>
                 </nav>
             </header>

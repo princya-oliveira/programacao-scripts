@@ -2,14 +2,14 @@ import React from 'react'
 import Titulo from '../../../../Titulo/Titulo'
 import AmericaSulHeader from '../AmericaSulHeader'
 
-export default function Cortagena() {
+export default function Cartagena() {
     return (
         <>  
             <AmericaSulHeader />
 
-            <Titulo text="Cortagena" />
+            <Titulo text="Cartagena" />
 
-            <div className="cortagena">
+            <div className="cartagena">
 
             </div>
         </>
