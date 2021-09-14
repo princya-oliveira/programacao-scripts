@@ -20,16 +20,18 @@ function App() {
     // promisse
     fetch(`http://localhost:3001/?cep=${data.cep}`)
     .then(response => response.json())
-    .then(console.log)
     .then(data => {
-      const array = convertToArray(data)
+      const array = convertToArray(data);
+      console.log("Array: ", array);
       setEvento(array)
     })
+    .catch( error => console.error)
   }
 
   const convertToArray = (obj) => {
-    const arr = [obj]
-    return arr
+    const arr = [obj];
+    console.log("Conversão em Array: ", arr);
+    return arr;
   }
 
   return (
@@ -45,7 +47,7 @@ function App() {
         <button type="submit" className="btn btn-success">Consultar CEP</button>
       </form>
 
-      <CepConsultado evento = {evento} />
+      <CepConsultado evento={evento} />
 
     </div>
   );
