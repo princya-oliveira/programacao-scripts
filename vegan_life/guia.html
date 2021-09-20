@@ -3,34 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/sobre.css">
-    <link rel="shortcut icon" href="images/vegan-life-icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/guia.css">
+    <link rel="shortcut icon" href="images/vegan-life-icon.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
+    
     <title>Guia</title>
 </head>
 <body>
-    <div id="interface_guia">
-        <!--Logo -->
-        <header>
-            <a href="index.html">
-                <img class="logo2" src="images/logo-cabecalho.png" width="180" height="70">
-            </a>
-        </header>
-        <!--Menu lateral-->
-        <aside class="aside">
-            <a href="index.html" id="inicio">Início</a>
-            <a href="sobre.html" id="sobre">Sobre</a>
-            <a href="guia.html" id="guia">Guia</a>
-            <a href="cadastro.html" id="cadastro">Cadastro</a>
-        </aside>
+    <div id="container">
 
-        <section id="corpo_guia">
+        <div id="header">
+
+            <!--Logo -->
+            <div id="header">
+                <img id="logo" src="images/logo-cabecalho.png" width="180" height="70" alt="">
+            </div>
+
+            <h3>ENCONTRE SUA COMIDA PREFERIDA</h3>
+
+            <input id="pesquisa" type="search" placeholder="O que você quer comer hoje?">
+
+        </div>
+
+        <!--Menu lateral-->
+        <div id="menu">
+            <aside class="aside">
+                <a href="index.html" id="inicio">Início</a>
+                <a href="sobre.html" id="sobre">Sobre</a>
+                <a href="guia.html" id="guia">Guia</a>
+                <a href="cadastro.html" id="cadastro">Cadastro</a>
+            </aside>
+        </div>
+
+        <!--Corpo-->
+        <div id="corpo">
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <figure id="card1">
+                                <img src="images/avatar-up.png">
+                            </figure>
+                            <h5 class="card-title">UP VEG</h5>
+                            <p>
+                                Lanches, congelados,<br>
+                                queijos, pratos e doces
+                            </p>
+                            <a href="#" class="btn">veja mais</a>
+                        </div>
+                    </div>
+                </div>
             
-        </section>
+                <div class="col-sm-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <figure id="card2">
+                                <img src="images/avatar-veganeria.png">
+                            </figure>
+                            <h5 class="card-title">VEGANERIA: COZINHA VEGANA</h5>
+                            <p>
+                                Lanches<br><br>
+                            </p>
+                            <a href="#" class="btn">veja mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+
+        <div id="corpo">
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <figure id="card1">
+                                <img src="images/avatar-up.png">
+                            </figure>
+                            <h5 class="card-title">UP VEG</h5>
+                            <p>
+                                Lanches, congelados,<br>
+                                queijos, pratos e doces
+                            </p>
+                            <a href="#" class="btn">veja mais</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col-sm-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <figure id="card2">
+                                <img src="images/avatar-veganeria.png">
+                            </figure>
+                            <h5 class="card-title">VEGANERIA: COZINHA VEGANA</h5>
+                            <p>
+                                Lanches<br><br>
+                            </p>
+                            <a href="#" class="btn">veja mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div>
     </div>
+
+        <!--Rodapé-->
+        <footer>
+            <figure id="icones">
+                <img id="icon-fb" src="images/icon-fb.png" href="#">
+                <img id="icon-instagram" src="images/icon-instagram.png" href="#">
+            </figure>
+        </footer>
+    </div>
+
+    <!--jQuery, Popper.js, plugins JS-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>

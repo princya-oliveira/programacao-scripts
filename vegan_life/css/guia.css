@@ -1,8 +1,107 @@
-header{
-    height: 400px;
+html,
+body {
+  width: 100vw;
+  height: auto;
 }
 
-header .logo2 {
+#container {
+  height: auto;
+}
+
+#logo {
     margin-left: 1130px;
     margin-top: 35px;
 }
+
+#header {
+    width: 100vw;
+    height: 250px;
+    background-color: #FECE01;
+}
+
+h3 {
+    margin-left: 475px;
+    margin-top: -150px;
+    width: 500px;
+    height: 50px;
+    font-size: 20px;
+    font-family: 'Roboto' sans-serif;
+    font-weight: 700;
+}
+
+#pesquisa {
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #FECE01;
+    border: solid 1.5px black;
+    color: black;
+    text-align: center;
+    font-family: 'Quicksand';
+    font-size: 16px;
+    margin-left: 500px;
+    margin-top: 10px;
+}
+
+/* Configurações guia */
+.row {
+    margin-left: 250px;
+    margin-top: 100px;
+}
+  
+.card {
+    background-color: transparent;
+    border: solid 1px black;
+    border-radius: 15px;
+    height: 380px;
+    width: 350px;
+}
+  
+#card1, #card2 {
+    margin-top: 10px;
+    margin-left: 80px;
+}
+  
+h5 {
+    font-family: 'Roboto' sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+p {
+    font-family: 'Quicksand';
+    font-size: 18px;
+    text-align: center;
+}
+  
+.btn {
+    background-color: #FD8C00 !important;
+    font-family: 'Roboto' sans-serif;
+    border-radius: 20px;
+    font-weight: 600;
+    color: black;
+    width: 150px;
+    margin-left: 80px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Configurações rodapé */
+footer {
+    background-color: #FECE01 !important;
+    height: 200px;
+    padding: auto;
+    bottom:0;
+    width:100%;
+    margin-top: 200px;
+  }
+  
+  #icones {
+    margin-left: 610px;
+  }
+  
+  #icon-fb, #icon-instagram {
+    padding-left: 10px;
+    margin-top: 60px;
+  }

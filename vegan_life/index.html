@@ -1,42 +1,129 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vegan Life</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/menu.css">
-    <link rel="shortcut icon" href="images/vegan-life-icon.png">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
-</head>
-<body>
-    <!--Logo -->
-    <nav class="navbar navbar-light">
-        <a class="navbar-brand" href="#">
-        <img class="logo" src="images/logo-cabecalho.png" width="180" height="70" alt="">
-        </a>
-    </nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-    <!--Menu lateral-->
-    <aside class="aside">
-        <a href="index.html" id="inicio">Início</a>
-        <a href="sobre.html" id="sobre">Sobre</a>
-        <a href="guia.html" id="guia">Guia</a>
-        <a href="cadastro.html" id="cadastro">Cadastro</a>
-    </aside>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="shortcut icon" href="images/vegan-life-icon.png">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-    <div class="container-text">
-        <h3>#IRRESISTÍVEIS</h3>
-        <h1>UM GUIA DESCOLADO &</h1>
-        <h1>COMIDINHAS DELICIOSAS &</h1>
-        <h1>100% VEGANAS</h1>
-    </div>
+        <title>Vegan Life</title>
+    </head>
+    <body>
 
-    <footer>
-        <p>Rodapé</p>
-    </footer>
+        <div id="container">
 
-</body>
+            <!--Inicio-full-->
+            <div id="inicio-full">
+                <!--Logo -->
+                <div id="header">
+                    <img id="logo" src="images/logo-cabecalho.png" width="180" height="70" alt="">
+                </div>
+
+                <!--Texto inicio-->
+                <div id="texto-inicio">
+                    
+                    <h4>
+                        #IRRESISTÍVEIS
+                    </h4>
+
+                    <h1>
+                        UM GUIA DESCOLADO & <br>
+                        COMIDINHAS DELICIOSAS & <br>
+                        100% VEGANAS
+                    </h1>
+                </div>
+
+                <!--Balão cvs-->
+                <figure id="balao">
+                    <img src="images/balao.png">
+                </figure>
+                
+                <input id="pesquisa" type="search" placeholder="O que você quer comer hoje?">
+
+                <!--Menu lateral-->
+                <div id="menu">
+                    <aside class="aside">
+                        <a href="index.html" id="inicio">Início</a>
+                        <a href="sobre.html" id="sobre">Sobre</a>
+                        <a href="guia.html" id="guia">Guia</a>
+                        <a href="cadastro.html" id="cadastro">Cadastro</a>
+                    </aside>
+                </div>
+            </div>
+
+            <!--Conteúdo corpo da página inicial-->
+            <div id="corpo-acima">
+                <div class="row">
+                    <div class="col-sm-5">
+                      <div class="card">
+                        <div class="card-body">
+                            <figure id="card2">
+                                <img src="images/card1.png">
+                            </figure>
+                            <h5 class="card-title">Pode ser café da manhã,</br> almoço ou jantar</h5>
+                            <a href="guia.html" class="btn">Encontre sua comida preferida</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-5">
+                      <div class="card">
+                        <div class="card-body">
+                            <figure id="card1">
+                                <img src="images/card2.png">
+                            </figure>
+                            <h5 class="card-title">Seu estabelecimento na</br> nossa plataforma</h5>
+                            <a href="cadastro.html" class="btn">adicione seu estabelecimento</a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="corpo-abaixo">
+                <div id="texto">
+                    <h2>
+                        Restaurantes<br>
+                        veganos ou com<br>
+                        opção vegana em<br>
+                        Franca: conheça o<br>
+                        Vegan Life.<br>
+                    </h2>
+                    
+                    <p id="texto-corpo">
+                        O Guia Vegan Life quer<br>
+                        ajudar você a se conectar<br>
+                        com as melhores opções<br>
+                        veganas de forma simples<br>
+                        e rápida.<br>
+                    </p>
+                    
+                    <a id="btn-sobre" href="sobre.html" class="btn">Saiba mais sobre nós</a>
+                </div>
+
+                <div id="imagem-corpo-abaixo">
+                    <figure id="img-corpo">
+                        <img src="images/img-corpo.png">
+                    </figure>   
+                </div>
+            </div>
+
+            <!--Rodapé-->
+            <footer>
+                <figure id="icones">
+                    <img id="icon-fb" src="images/icon-fb.png" href="#">
+                    <img id="icon-instagram" src="images/icon-instagram.png" href="#">
+                </figure>
+            </footer>
+        </div>
+
+        <!--jQuery, Popper.js, plugins JS-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
 </html>

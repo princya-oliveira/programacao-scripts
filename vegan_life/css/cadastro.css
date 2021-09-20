@@ -1,3 +1,81 @@
+body  {
+    width: 90vw;
+    height: 90vh;	
+	margin: 0;  	
+	padding: 0;  	
+	background: #FECE01;  
+}
+
+header .logo2 {
+    margin-left: 1130px;
+    margin-top: 35px;
+}
+
+div#formulario {
+    width: 500px;
+    height: 415px;
+    border: solid 1px black;
+    border-radius: 10px;
+    margin-left: 130px;
+    padding: 0;
+    margin-right: 0;
+}
+
+h4 {
+    width: 450px;
+    margin-top: -30px;
+    color: #000;
+    font-family: 'Roboto' sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 185px;
+}
+
+.btn {
+    background-color: #02B4FE !important;
+    border-radius: 20px 20px 20px 20px;
+    font-weight: 700;
+    color: black;
+    font-family: 'Quicksand';
+    width: 150px;
+    margin-left: 135px;
+}
+
+.form-control {
+    border-color: solid 1px black;
+    color: black;
+    font-family: 'Quicksand';
+    font-weight: 500;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#forms {
+    margin-top: 25px;
+    margin-left: 45px;
+}
+
+#inputNome, #inputCep, #inputLogradouro, #inputNum, #inputBairro, #inputComplemento, #inputEmail, #inputContato, #inputRedeSocial, #inputItens {
+    background-color: transparent;
+    border: solid 1px black;
+    font-weight: 550;
+    color: black;
+    font-family: 'Quicksand';
+    font: 12px;
+}
+
+figure#img-cadastro {
+    width: 450px;
+    height: 450px;
+    margin-top: -302px;
+    margin-left: 720px;
+}
+
+
+
+
+
+
 
 
 
