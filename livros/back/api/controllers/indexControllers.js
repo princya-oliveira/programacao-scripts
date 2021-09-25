@@ -1,9 +1,8 @@
-
 module.exports = {
-    indexControllers,
+    indexControllers, 
 }
 
-function indexControllers(req, res) => {
-    console.log('Rota Raiz Encontrada');
-    res.json('Rota Autores Encontrada');
+function indexControllers(req, res) {
+    console.log('Rota raiz encontrada')
+    res.json('Rota raiz encontrada')
 }

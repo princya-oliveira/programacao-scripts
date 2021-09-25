@@ -1,10 +1,13 @@
-const { server } = require('http');
-const { indexControllers } = require('../controllers/indexControllers');
-const controllerIndex = require('../controllers/indexControllers.js');
+const controllerIndex = require('../controllers/indexControllers.js')
+
+// server.get('/', (req, res) => {
+//     console.log('Rota raiz eencontrada!')
+//     res.json('Rota raiz encontrada!')
+// })
 
 server.get('/', controllerIndex.indexControllers)
 
-server.get('/', (req, res) => {
-    console.log('Rota Raiz Encontrada!');
-    res.json('Rota Raiz Encontrada!');
+server.get('/autores', (req, res) => {
+    console.log('Rota autores encontrada!')
+    res.json('Rota autores encontrada!')
 })
