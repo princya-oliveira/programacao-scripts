@@ -8,7 +8,7 @@ server = express()
 server.set('porta', 3001)
 
 consign({ cwd: 'api' })
-    .include('models')
+    .include('models') 
     .then('controllers')
     .then('routes')
     .into(server)
