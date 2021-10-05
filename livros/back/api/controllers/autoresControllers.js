@@ -69,6 +69,7 @@ function autoresAtivoInativo(req, res) {
                 throw err
             }
             console.log("Registro Atualizado!")
+            res.redirect('/autores/consultar/' + id)
         })
     })
 }
