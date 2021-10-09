@@ -1,9 +1,9 @@
-const controllerEditoras = require('../controllers/editorasControllers.js')
+const controllerEditoras = require('../controllers/editorasControllers.js');
 
-server.get('/editoras', controllerEditoras.editorasMenu)
+server.get('/editoras', controllerEditoras.editorasMenu) 
 
-//server.get('/editoras/listar', controllerEditoras.autoresGetAll)
+server.get('/editoras/listar', controllerEditoras.editorasGetAll) 
 
-//server.get('/autores/consultar/:codigo', controllerAutores.autoresGetById)
+server.get('/editoras/consultar/:codigo', controllerEditoras.editorasGetById) 
 
-//server.get('/autores/ativoInativo/:codigo', controllerAutores.autoresAtivoInativo)
+server.get('/editoras/ativoInativo/:codigo', controllerEditoras.editorasAtivoInativo) 
