@@ -11,23 +11,25 @@
     <link rel="shortcut icon" href="images/vegan-life-icon.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
-    
+
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
     <title>Guia</title>
 </head>
 <body>
     <div id="container">
 
         <div id="header">
-
             <!--Logo -->
             <div id="header">
-                <img id="logo" src="images/logo-cabecalho.png" width="180" height="70" alt="">
+                    <img id="logo" src="images/logo-cabecalho.png" width="180" height="70" alt="">
             </div>
 
             <h3>ENCONTRE SUA COMIDA PREFERIDA</h3>
-
             <input id="pesquisa" type="search" placeholder="O que você quer comer hoje?">
-
         </div>
 
         <!--Menu lateral-->
@@ -44,6 +46,7 @@
         <div id="corpo-esq">
 
             <div class="row">
+                
                 <!--Empresa 1-->
                 <div class="col-sm-5">
                     <div class="card">
@@ -53,10 +56,70 @@
                             </figure>
                             <h5 class="card-title">UP VEG</h5>
                             <p>
-                                Lanches, congelados,<br>
-                                queijos, pratos e doces
+                                Lanches<br><br>
                             </p>
-                            <a href="#" class="btn">veja mais</a>
+                            
+                            <!--Botão abrir modal-->
+                            <button type="button" class="btn" data-toggle="modal" data-target="#ModalCentralizado">
+                                veja mais
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="ModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+                                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+
+                                        <!--Header Modal-->
+                                        <div class="modal-header">
+                                            <figure id="img-popup">
+                                                <img src="images/avatar-up.png">
+                                            </figure>
+                                            <div class="info">
+                                                <h5 class="modal-title" id="titulo">UP VEG</h5>
+                                                <br>
+                                                <address id="endereco">
+                                                    <b>Endereço:</b>  deserunt mollit anim id est, 4222,  Bairro deserunt.
+                                                    <br><b>Contato:</b> (XX) XXXXX - XXXX
+
+                                                    <figure id="icones-popup">
+                                                        <img id="icon-fb-popup" src="images/icon-fb.png" href="#">
+                                                        <img id="icon-instagram-popup" src="images/icon-instagram.png" href="#">
+                                                    </figure>
+                                                </address>
+                                            </div>
+                                            
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <!--/Header Modal-->
+
+                                        <!--Body Modal-->
+                                        <div class="modal-body">
+                                            <h5>CARDÁPIO</h5>
+                                            <p>Item cardápio, item cardápio, item cardápio.</p>
+                                        </div>
+                                        <!--/Body Modal-->
+
+                                        <div class="modal-footer">
+                                            <!--Slick Carrosel-->
+                                            <div class="center">
+                                                <div><img src="images/fotos-upveg/upveg1.png" alt="img-up1" /></div>
+                                                <div><img src="images/fotos-upveg/upveg2.png" alt="img-up2" /></div>
+                                                <div><img src="images/fotos-upveg/upveg3.png" alt="img-up3"/></div>
+                                                <div><img src="images/fotos-upveg/upveg4.png" alt="img-up4" /></div>
+                                                <div><img src="images/fotos-upveg/upveg5.png" alt="img-up5" /></div>
+                                                <div><img src="images/fotos-upveg/upveg6.png" alt="img-up6" /></div>
+                                                <div><img src="images/fotos-upveg/upveg7.png" alt="img-up7" /></div>
+                                                <div><img src="images/fotos-upveg/upveg8.png" alt="img-up8" /></div>
+                                            </div>
+                                            <!--/Slick Carrosel-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/Modal-->
+
                         </div>
                     </div>
                 </div>
@@ -70,49 +133,12 @@
                             </figure>
                             <h5 class="card-title">VEGANERIA: COZINHA VEGANA</h5>
                             <p>
-                                Lanches<br><br>
-                            </p>
-                            <a href="#" class="btn">veja mais</a>
-                        </div>
-                    </div>
-                </div>
-            </div>   
-        </div>
-
-        <div id="corpo-dir">
-            <div class="row">
-
-                <!--Empresa 3-->
-                <div class="col-sm-5">
-                    <div class="card">
-                        <div class="card-body">
-                            <figure id="card1">
-                                <img src="images/avatar-up.png">
-                            </figure>
-                            <h5 class="card-title">UP VEG</h5>
-                            <p>
                                 Lanches, congelados,<br>
-                                queijos, pratos e doces
+                                queijos, pratos e doces<br>
                             </p>
-                            <a href="#" class="btn">veja mais</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!--Empresa 4-->
-                <div class="col-sm-5">
-                    <div class="card">
-                        <div class="card-body">
-                            <figure id="card2">
-                                <img src="images/avatar-veganeria.png">
-                            </figure>
-                            <h5 class="card-title">VEGANERIA: COZINHA VEGANA</h5>
-                            <p>
-                                Lanches<br><br>
-                            </p>
-
+                            
                             <!--Botão abrir modal-->
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalCentralizado">
+                            <button type="button" class="btn" data-toggle="modal" data-target="#ModalCentralizado">
                                 veja mais
                             </button>
 
@@ -120,6 +146,8 @@
                             <div class="modal fade" id="ModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
                                 <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                                     <div class="modal-content">
+
+                                        <!--Header Modal-->
                                         <div class="modal-header">
                                             <figure id="img-popup">
                                                 <img src="images/avatar-veganeria.png">
@@ -136,95 +164,223 @@
                                                         <img id="icon-instagram-popup" src="images/icon-instagram.png" href="#">
                                                     </figure>
                                                 </address>
-
                                             </div>
                                             
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
+                                        <!--/Header Modal-->
+
+                                        <!--Body Modal-->
                                         <div class="modal-body">
-                                            <h4>Cardápio</h4>
+                                            <h5>CARDÁPIO</h5>
                                             <p>Item cardápio, item cardápio, item cardápio.</p>
                                         </div>
+                                        <!--/Body Modal-->
+
                                         <div class="modal-footer">
-                                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                                                <div class="carousel-inner">
-                                                  <div class="carousel-item row no-gutters active">
-                                                  
-                                                      <div class="col-3 float-left">    
-                                                            <img class="d-block w-100" src="images/veganeria1.jpg" alt="1">
-                                                      </div>
-                                                      
-                                                      <div class="col-3 float-left">    
-                                                            <img class="d-block w-100" src="images/veganeria2.jpg" alt="2">
-                                                      </div>
-                                                      
-                                                      <div class="col-3 float-left">    
-                                                            <img class="d-block w-100" src="images/veganeria3.jpg" alt="3">
-                                                      </div>
-                                                      
-                                                      <div class="col-3 float-left">    
-                                                            <img class="d-block w-100" src="images/veganeria4.jpg" alt="4">
-                                                      </div>
-                                                  </div><!-- FIM itens ativos -->
-                                                  
-                                                  <div class="carousel-item row no-gutters">
-                                                      <!-- Para adicionar mais slides, 
-                                                          lembre-se de inserir após a classe carousel-item 
-                                                      -->
-                                                    <div class="col-3 float-left">    
-                                                            <img class="d-block w-100" src="images/veganeria1.jpg" alt="5">
-                                                    </div>
-                                                    
-                                                    <div class="col-3 float-left">    
-                                                            <img class="d-block w-100" src="images/veganeria2.jpg" alt="6">
-                                                    </div>
-                                                    
-                                                    <div class="col-3 float-left">    
-                                                            <img class="d-block w-100" src="images/veganeria3.jpg" alt="7">
-                                                    </div>
-                                                    
-                                                    <div class="col-3 float-left">    
-                                                            <img class="d-block w-100" src="images/veganeria3.jpg" alt="8">
-                                                    </div>
-                                                  
-                                                </div>
-                                                
-                                                <!-- controladores maior e menor -->
-                                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                  <span class="sr-only">Previous</span>
-                                                </a>
-                                                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                  <span class="sr-only">Next</span>
-                                                </a>
-                                              </div>
-                                              </div>
+                                            <!--Slick Carrosel-->
+                                            <div class="center">
+                                                <div><img src="images/fotos-veganeria/veganeria1.png" alt="img1" /></div>
+                                                <div><img src="images/fotos-veganeria/veganeria2.png" alt="img2" /></div>
+                                                <div><img src="images/fotos-veganeria/veganeria3.png" alt="img3"/></div>
+                                                <div><img src="images/fotos-veganeria/veganeria4.png" alt="img4" /></div>
+                                                <div><img src="images/fotos-veganeria/veganeria5.png" alt="img5" /></div>
+                                                <div><img src="images/fotos-veganeria/veganeria6.png" alt="img6" /></div>
+                                                <div><img src="images/fotos-veganeria/veganeria7.png" alt="img7" /></div>
+                                                <div><img src="images/fotos-veganeria/veganeria8.png" alt="img8" /></div>
+                                            </div>
+                                            <!--/Slick Carrosel-->
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                
+                            <!--/Modal-->
+
                         </div>
                     </div>
                 </div>
             </div>   
         </div>
 
+        <div id="corpo-dir">
+
+            <div class="row">
+
+                <!--Empresa 3-->
+                <div class="col-sm-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <figure id="card1">
+                                <img src="images/avatar-up.png">
+                            </figure>
+                            <h5 class="card-title">UP VEG</h5>
+                            <p>
+                                Lanches<br><br>
+                            </p>
+                            
+                            <!--Botão abrir modal-->
+                            <button type="button" class="btn" data-toggle="modal" data-target="#ModalCentralizado">
+                                veja mais
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="ModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+                                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+
+                                        <!--Header Modal-->
+                                        <div class="modal-header">
+                                            <figure id="img-popup">
+                                                <img src="images/avatar-veganeria.png">
+                                            </figure>
+                                            <div id="info">
+                                                <h5 class="modal-title" id="titulo">VEGANERIA: COZINHA VEGANA</h5>
+                                                <br>
+                                                <address id="endereco">
+                                                    <b>Endereço:</b>  deserunt mollit anim id est, 4222,  Bairro deserunt.
+                                                    <br><b>Contato:</b> (XX) XXXXX - XXXX
+
+                                                    <figure id="icones-popup">
+                                                        <img id="icon-fb-popup" src="images/icon-fb.png" href="#">
+                                                        <img id="icon-instagram-popup" src="images/icon-instagram.png" href="#">
+                                                    </figure>
+                                                </address>
+                                            </div>
+                                            
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <!--/Header Modal-->
+
+                                        <!--Body Modal-->
+                                        <div class="modal-body">
+                                            <h5>CARDÁPIO</h5>
+                                            <p>Item cardápio, item cardápio, item cardápio.</p>
+                                        </div>
+                                        <!--/Body Modal-->
+
+                                        <div class="modal-footer">
+                                            <!--Slick Carrosel-->
+                                            <div class="center">
+                                                <div><img src="images/fotos-upveg/upveg1.png" alt="img-up1" /></div>
+                                                <div><img src="images/fotos-upveg/upveg2.png" alt="img-up2" /></div>
+                                                <div><img src="images/fotos-upveg/upveg3.png" alt="img-up3"/></div>
+                                                <div><img src="images/fotos-upveg/upveg4.png" alt="img-up4" /></div>
+                                                <div><img src="images/fotos-upveg/upveg5.png" alt="img-up5" /></div>
+                                                <div><img src="images/fotos-upveg/upveg6.png" alt="img-up6" /></div>
+                                                <div><img src="images/fotos-upveg/upveg7.png" alt="img-up7" /></div>
+                                                <div><img src="images/fotos-upveg/upveg8.png" alt="img-up8" /></div>
+                                            </div>
+                                            <!--/Slick Carrosel-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/Modal-->
+
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Empresa 4-->
+                <div class="col-sm-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <figure id="card2">
+                                <img src="images/avatar-veganeria.png">
+                            </figure>
+                            <h5 class="card-title">VEGANERIA: COZINHA VEGANA</h5>
+                            <p>
+                                Lanches, congelados,<br>
+                                queijos, pratos e doces<br>
+                            </p>
+
+                            <!--Botão abrir modal-->
+                            <button type="button" class="btn" data-toggle="modal" data-target="#ModalCentralizado">
+                                veja mais
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="ModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+                                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+
+                                        <!--Header Modal-->
+                                        <div class="modal-header">
+                                            <figure id="img-popup">
+                                                <img src="images/avatar-veganeria.png">
+                                            </figure>
+                                            <div id="info">
+                                                <h5 class="modal-title" id="titulo">VEGANERIA: COZINHA VEGANA</h5>
+                                                <br>
+                                                <address id="endereco">
+                                                    <b>Endereço:</b>  deserunt mollit anim id est, 4222,  Bairro deserunt.
+                                                    <br><b>Contato:</b> (XX) XXXXX - XXXX
+
+                                                    <figure id="icones-popup">
+                                                        <img id="icon-fb-popup" src="images/icon-fb.png" href="#">
+                                                        <img id="icon-instagram-popup" src="images/icon-instagram.png" href="#">
+                                                    </figure>
+                                                </address>
+                                            </div>
+                                            
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <!--/Header Modal-->
+
+                                        <!--Body Modal-->
+                                        <div class="modal-body">
+                                            <h5>CARDÁPIO</h5>
+                                            <p>Item cardápio, item cardápio, item cardápio.</p>
+                                        </div>
+                                        <!--/Body Modal-->
+
+                                        <div class="modal-footer">
+                                            <!--Slick Carrosel-->
+                                            <div class="center">
+                                                <div><img src="images/fotos-veganeria/veganeria1.png" alt="img1" /></div>
+                                                <div><img src="images/fotos-veganeria/veganeria2.png" alt="img2" /></div>
+                                                <div><img src="images/fotos-veganeria/veganeria3.png" alt="img3"/></div>
+                                                <div><img src="images/fotos-veganeria/veganeria4.png" alt="img4" /></div>
+                                                <div><img src="images/fotos-veganeria/veganeria5.png" alt="img5" /></div>
+                                                <div><img src="images/fotos-veganeria/veganeria6.png" alt="img6" /></div>
+                                                <div><img src="images/fotos-veganeria/veganeria7.png" alt="img7" /></div>
+                                                <div><img src="images/fotos-veganeria/veganeria8.png" alt="img8" /></div>
+                                            </div>
+                                            <!--/Slick Carrosel-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/Modal-->
+                        </div>
+                    </div>
+                </div>
+                <!--/Empresa4-->
+            </div>   
+        </div>
+
     </div>
-        <!--Rodapé-->
-        <footer>
-            <figure id="icones">
-                <img id="icon-fb" src="images/icon-fb.png" href="#">
-                <img id="icon-instagram" src="images/icon-instagram.png" href="#">
-            </figure>
-        </footer>
+    
+    <!--Rodapé-->
+    <footer>
+        <figure id="icones">
+            <img id="icon-fb" src="images/icon-fb.png" href="#">
+            <img id="icon-instagram" src="images/icon-instagram.png" href="#">
+        </figure>
+    </footer>
 
     <!--jQuery, Popper.js, plugins JS-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/carousel.js"></script>
 </body>
 </html>
