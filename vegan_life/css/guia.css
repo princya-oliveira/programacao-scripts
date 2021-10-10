@@ -95,13 +95,58 @@ footer {
     bottom:0;
     width:100%;
     margin-top: 200px;
-  }
+}
   
-  #icones {
+#icones {
     margin-left: 610px;
-  }
+}
   
-  #icon-fb, #icon-instagram {
+#icon-fb, #icon-instagram {
     padding-left: 10px;
     margin-top: 60px;
-  }
+}
+
+/* Configurações dos modais */
+
+.modal-content {
+    background-color: #FECE01;
+    height: 500px;
+    border-radius: 20px;
+    border: none;
+}
+
+#img-popup {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+#info {
+    margin-left: 50px;
+}
+
+#endereco {
+    font-family: 'Quicksand';
+    font-size: large;
+}
+
+#icon-instagram-popup, #icon-fb-popup {
+    width: 30px;
+    margin-top: 15px;
+    margin-right: 5px;
+}
+
+#icones-popup {
+    margin-left: 430px;
+}
+
+#titulo {
+    text-align: left;
+}
+
+/* Teste slider */
+.carousel-inner {
+    width: 780px;
+    height: 150px;
+}
+
+

@@ -41,8 +41,10 @@
         </div>
 
         <!--Corpo-->
-        <div id="corpo">
+        <div id="corpo-esq">
+
             <div class="row">
+                <!--Empresa 1-->
                 <div class="col-sm-5">
                     <div class="card">
                         <div class="card-body">
@@ -58,7 +60,8 @@
                         </div>
                     </div>
                 </div>
-            
+                
+                <!--Empresa 2-->
                 <div class="col-sm-5">
                     <div class="card">
                         <div class="card-body">
@@ -76,8 +79,10 @@
             </div>   
         </div>
 
-        <div id="corpo">
+        <div id="corpo-dir">
             <div class="row">
+
+                <!--Empresa 3-->
                 <div class="col-sm-5">
                     <div class="card">
                         <div class="card-body">
@@ -93,7 +98,8 @@
                         </div>
                     </div>
                 </div>
-            
+                
+                <!--Empresa 4-->
                 <div class="col-sm-5">
                     <div class="card">
                         <div class="card-body">
@@ -104,14 +110,110 @@
                             <p>
                                 Lanches<br><br>
                             </p>
-                            <a href="#" class="btn">veja mais</a>
+
+                            <!--Botão abrir modal-->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalCentralizado">
+                                veja mais
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="ModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+                                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <figure id="img-popup">
+                                                <img src="images/avatar-veganeria.png">
+                                            </figure>
+                                            <div id="info">
+                                                <h5 class="modal-title" id="titulo">VEGANERIA: COZINHA VEGANA</h5>
+                                                <br>
+                                                <address id="endereco">
+                                                    <b>Endereço:</b>  deserunt mollit anim id est, 4222,  Bairro deserunt.
+                                                    <br><b>Contato:</b> (XX) XXXXX - XXXX
+
+                                                    <figure id="icones-popup">
+                                                        <img id="icon-fb-popup" src="images/icon-fb.png" href="#">
+                                                        <img id="icon-instagram-popup" src="images/icon-instagram.png" href="#">
+                                                    </figure>
+                                                </address>
+
+                                            </div>
+                                            
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h4>Cardápio</h4>
+                                            <p>Item cardápio, item cardápio, item cardápio.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                                <div class="carousel-inner">
+                                                  <div class="carousel-item row no-gutters active">
+                                                  
+                                                      <div class="col-3 float-left">    
+                                                            <img class="d-block w-100" src="images/veganeria1.jpg" alt="1">
+                                                      </div>
+                                                      
+                                                      <div class="col-3 float-left">    
+                                                            <img class="d-block w-100" src="images/veganeria2.jpg" alt="2">
+                                                      </div>
+                                                      
+                                                      <div class="col-3 float-left">    
+                                                            <img class="d-block w-100" src="images/veganeria3.jpg" alt="3">
+                                                      </div>
+                                                      
+                                                      <div class="col-3 float-left">    
+                                                            <img class="d-block w-100" src="images/veganeria4.jpg" alt="4">
+                                                      </div>
+                                                  </div><!-- FIM itens ativos -->
+                                                  
+                                                  <div class="carousel-item row no-gutters">
+                                                      <!-- Para adicionar mais slides, 
+                                                          lembre-se de inserir após a classe carousel-item 
+                                                      -->
+                                                    <div class="col-3 float-left">    
+                                                            <img class="d-block w-100" src="images/veganeria1.jpg" alt="5">
+                                                    </div>
+                                                    
+                                                    <div class="col-3 float-left">    
+                                                            <img class="d-block w-100" src="images/veganeria2.jpg" alt="6">
+                                                    </div>
+                                                    
+                                                    <div class="col-3 float-left">    
+                                                            <img class="d-block w-100" src="images/veganeria3.jpg" alt="7">
+                                                    </div>
+                                                    
+                                                    <div class="col-3 float-left">    
+                                                            <img class="d-block w-100" src="images/veganeria3.jpg" alt="8">
+                                                    </div>
+                                                  
+                                                </div>
+                                                
+                                                <!-- controladores maior e menor -->
+                                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                  <span class="sr-only">Previous</span>
+                                                </a>
+                                                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                  <span class="sr-only">Next</span>
+                                                </a>
+                                              </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
                         </div>
                     </div>
                 </div>
             </div>   
         </div>
+
     </div>
-
         <!--Rodapé-->
         <footer>
             <figure id="icones">
@@ -119,7 +221,6 @@
                 <img id="icon-instagram" src="images/icon-instagram.png" href="#">
             </figure>
         </footer>
-    </div>
 
     <!--jQuery, Popper.js, plugins JS-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
