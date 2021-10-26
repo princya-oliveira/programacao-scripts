@@ -2,15 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './componentes/App/App';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
   <BrowserRouter>
-    <div>
-      <App />
-    </div>
+    
+    <App />
+  
   </BrowserRouter>,
+  
   document.getElementById('root')
 );
 
