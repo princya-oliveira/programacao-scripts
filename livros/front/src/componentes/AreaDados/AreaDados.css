@@ -1,6 +1,7 @@
 .areaDados {
-    height: 66vh;
-    border: 1px solid cyan;
+    height: 67.5vh;
+    border: 3px solid black;
     margin: 0.2%;
-    background-color: darkcyan;
-}
+    background-color: white;
+  
+  }
