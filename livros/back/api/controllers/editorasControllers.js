@@ -2,17 +2,10 @@ const editorasModels = require('../models/editorasModels.js')
 
 module.exports = {
     editorasMenu,
-}
-
-const editorasModels = require('../models/editorasModels.js')
-
-module.exports = {
-    editorasMenu,
     editorasGetAll,
     editorasGetById,
     editorasAtivoInativo,
 };
-
 
 function editorasMenu(req, res) {
     console.log(`Rota Editoras Encontrada`);

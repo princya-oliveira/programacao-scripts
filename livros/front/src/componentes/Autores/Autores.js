@@ -5,7 +5,7 @@ import './Autores.css';
 async function Autores() {
 
     console.log("Executando fetch..")
-    await fetch('http://localhost:3000/autores/listar')
+    await fetch('http://localhost:3002/autores/listar')
     .then(response => response.json())
     .then(data => console.log(data))
     .catch(error => console.error)

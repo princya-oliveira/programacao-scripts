@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Autores from '../Autores/Autores';
+import { Link, Route } from 'react-router-dom';
 import './MenuHorizontal.css';
 
 export default function MenuHorizontal() {
@@ -15,7 +16,8 @@ export default function MenuHorizontal() {
                         <li> <Link to="/usuarios"> Usuários </Link> </li>
                         <li> <Link to="/configuracoes"> Configurações </Link> </li>
                     </ul>
-                </nav>   
+                </nav>
+                <Route exact path="/autores" render={(props) => <Autores />}></Route>  
             </div>
         </div>
     );
