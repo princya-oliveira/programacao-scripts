@@ -1,9 +1,11 @@
-const controllerAutores = require('../controllers/autoresControllers.js')
+const controller = require('../controllers/autoresControllers.js');
 
-server.get('/autores', controllerAutores.autoresMenu)
+//server.get('/autores', controller.autoresMenu)
 
-server.get('/autores/listar', controllerAutores.autoresGetAll)
+server.get('/autores', controller.autoresGetAll)
+server.get('/autores/:codigo', controller.autoresGetById)
 
-server.get('/autores/consultar/:codigo', controllerAutores.autoresGetById)
+server.put('/autores/ativoInativo/:codigo', controller.autoresAtivoInativo)
 
-server.get('/autores/ativoInativo/:codigo', controllerAutores.autoresAtivoInativo)
+server.put('/autores/:codigo', controller.autoresEditar)
+server.post('/autores', controller.autoresNovo)

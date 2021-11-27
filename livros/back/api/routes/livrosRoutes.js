@@ -1,9 +1,9 @@
-const controllerLivros = require('../controllers/livrosControllers.js');
+const controller = require('../controllers/livrosControllers.js');
 
-server.get('/livros', controllerLivros.livrosMenu) 
+server.get('/livros', controller.livrosMenu)
 
-server.get('/livros/listar', controllerLivros.livrosGetAll)
+server.get('/livros/listar', controller.livrosGetAll)
 
-server.get('/livros/consultar/:codigo', controllerLivros.livrosGetById) 
+server.get('/livros/consultar/:codigo', controller.livrosGetById)
 
-server.get('/livros/ativoInativo/:codigo', controllerLivros.livrosAtivoInativo) 
+server.get('/livros/ativoInativo/:codigo', controller.livrosAtivoInativo)

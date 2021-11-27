@@ -1,22 +1,21 @@
-const editorasModels = require('../models/editorasModels.js')
+const models = require('../models/editorasModels.js');
 
 module.exports = {
     editorasMenu,
     editorasGetAll,
     editorasGetById,
-    editorasAtivoInativo,
-};
+    editorasAtivoInativo        
+}
 
 function editorasMenu(req, res) {
-    console.log(`Rota Editoras Encontrada`);
-    res.json(`Rota Editoras Encontrada`)
+    res.json('Rota Editoras Encontrada!!!');
+    console.log('Rota Editoras Encontrada!!!');
 }
 
 function editorasGetAll(req, res) {
-    console.log(`Listar Editoras { Models }`);
-    //res.json(`Listar Autores { Models }`)
-    editorasModels.getAllEditoras(function(err, resposta) {
-        console.log(`Retorno de Editoras { Models }`);
+    console.log('Listar Editoras {M O D E L}');
+    models.getAllEditoras(function(err, resposta) {
+        console.log('Retorno de Editoras {M O D E L}', resposta)
         if(err) {
             throw err;
         } else {
@@ -26,44 +25,43 @@ function editorasGetAll(req, res) {
 }
 
 function editorasGetById(req, res) {
-  console.log(`Consulta Editoras { M O D E L S }`);
-  const id = req.params.codigo;
- 
-  console.log(`Parâmetro Esperado: ${id}`);
-  editorasModels.getByIdEditoras(id, function(err, resposta) {
-      console.log(`Retorno de Editoras { M O D E L S }\n`, resposta);
-      if(err) {
-          throw err;
-      } else {
-          res.json(resposta)
-      }
-  })
+    const id = req.params.codigo
+    console.log('Parametro Esperado: ' + id);
+    models.getByIdEditoras(id, function(err, resposta) {
+        console.log('Retorno de Editoras Id {M O D E L}', resposta)
+        if(err) {
+            throw err;
+        } else {
+            res.json(resposta);
+        }
+    })
 }
 
 function editorasAtivoInativo(req, res) {
-  console.log(`Ativar Inativar Autores { M O D E L S }`);
-  const id = req.params.codigo;
-  let p_ativo = ''
+    const id = req.params.codigo
+    res.json('Ativar/Inativar Editoras { M O D E L }')    
+    console.log('Ativar/Inativar Editoras { M O D E L }')
+    console.log('Parametro Esperado: ' + id);
 
-  console.log(`Parâmetro Esperado: ${id}`);
-  editorasModels.getByIdEditoras(id, function(err, resposta) {
-      console.log(`Retorno de Autores Ativo/Inativo: `, resposta[0].aut_ativoinativo);
-      p_ativo = resposta[0].aut_ativoinativo;
-
-      if(err) throw err;
-      else {
-          if(p_ativo == 'A') p_ativo = 'I'
-          else p_ativo = 'A'
-          //res.json(resposta)
-      }
-      console.log(`A/I: ${p_ativo}`);
-      editorasModels.ativarInativar(id, p_ativo, function(err, result) {
-          if(err) throw err
-          console.log(`Registro Atualizado!!!`);
-          res.redirect(`/autores/listar/`)
-
-          //res.json(result)
-      })
-  })
+    models.getByIdEditoras(id, function(err, resposta) {
+        console.log('Retorno de Editoras Id {M O D E L}', resposta)
+        let p_ativo = resposta[0].edt_ativoinativo
+        if(err) {
+            throw err;
+        } else {
+            if( p_ativo == 'A') {
+                p_ativo = 'I'
+            } else {
+                p_ativo = 'A'
+            }
+        }
+        console.log('A/I: ' + p_ativo);
+        models.ativarInativar(id, p_ativo, function(err, result){
+            if(err) {
+                throw err
+            }
+            console.log("Registro Atualizado!!!")
+            // res.redirect('/autores/consultar/' + id);
+        })
+    })
 }
-

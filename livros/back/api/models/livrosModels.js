@@ -3,7 +3,7 @@ const conexao = require('../../config/conexao.js');
 module.exports = {
     getAllLivros,
     getByIdLivros,
-    ativarInativar   
+    ativarInativar        
 }
 
 function getAllLivros (callback) {
