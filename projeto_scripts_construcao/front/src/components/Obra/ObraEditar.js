@@ -3,35 +3,19 @@ import urlApi from '../../service/api';
 import { useEffect, useState } from 'react';
 import { useParams, useHistory } from "react-router-dom";
 
-const label = {
-  color: 'white'
-}
-
-const h1 = {
-  color: 'white'
-}
-
-
-const button = {
-  marginTop: '10vh'
-}
-
-const formStyle = {
-  marginTop: '5vh'
-}
-
-const inputStyle = {
-  marginTop: '2.5vh'
-}
+const label = { color: 'white' }
+const h1 = { color:'white' }
+const button = { marginTop:'10vh' }
+const formStyle = {marginTop: '5vh'}
+const inputStyle = { marginTop: '2.5vh' }
 
 export default function ObraEditar() {
 
   const history = useHistory()
-
   let idBoolean = false;
 
   const [codigo, setCodigo] = useState(0);
-  const [cidade, setCidade] = useState(''); //nome
+  const [cidade, setCidade] = useState('');
   const [tipoobra, setTipoobra] = useState('');
   const [valor, setValor] = useState('');
   const [dtinicio, setDtinicio] = useState('');
@@ -42,7 +26,7 @@ export default function ObraEditar() {
 
   function IfCrud() {
     console.log('Id Obra: ' + id + ' - ' + idBoolean)
-    if (id === 0) {
+    if (id == 0) {
       idBoolean = true;
     } else {
     }
@@ -53,7 +37,7 @@ export default function ObraEditar() {
       console.log('Obra: ' + id + ' - ' + idBoolean)
       if (id == 0) {
         setChecked(true);
-        console.log('Inclusão de novo registro!')
+        console.log('Novo Registro Inserido!')
       } else {
         const { data } = await urlApi.get('/obra/' + id);
         console.log(data)
@@ -81,21 +65,21 @@ export default function ObraEditar() {
 
     try {
       if (cidade.length === 0) {
-        alert('Insira uma cidade válida')
+        alert('Insira uma cidade')
       } else {
         console.log("Codigo Obra: ", id)
-        if (id == 0) {
-          console.log("Inclusão de Registro!")
+        if (id === 0) {
+          console.log("Registro Incluído!")
           await urlApi.post('obra', data)
-            .then(response => alert("Inserção Realizada com Sucesso!!!!"))
+            .then(response => alert("Registro Incluído com Sucesso!"))
         } else {
-          console.log("Alteração de Registro! ", id)
+          console.log("Registro Alterado! ", id)
           await urlApi.put('/obra/' + id, data)
-            .then(response => alert("Alteração Realizada com Sucesso!!!!"))
+            .then(response => alert("Registro Alterado com Sucesso!"))
         }
       }
     } catch (error) {
-      alert('Erro no cadastro, tente novamente.')
+      alert('Erro, tente novamente.')
     }
   }
 

@@ -1,47 +1,32 @@
 import React from "react"
 import urlApi from '../../service/api';
-import { useEffect, useState } from 'react';
 import { useParams, useHistory } from "react-router-dom";
+import { useEffect, useState } from 'react';
 
-const label = {
-  color: 'white'
-}
-
-const h1 = {
-  color: 'white'
-}
-
-const button = {
-  marginTop: '10vh'
-}
-
-const formStyle = {
-  marginTop: '5vh'
-}
-
-const inputStyle = {
-  marginTop: '2.5vh'
-}
+const label = { color: 'white' }
+const h1 = { color:'white' }
+const button = { marginTop:'10vh' }
+const formStyle = {marginTop: '5vh'}
+const inputStyle = { marginTop: '2.5vh' }
 
 export default function EngenheiroEditar() {
 
   const history = useHistory()
-
   let idBoolean = false;
 
   const [codigoE, setCodigoE] = useState(0);
   const [nome, setNome] = useState('');
-  const [apelido, setApelido] = useState(''); // sexo
-  const [telefone, setTelefone] = useState(''); // nacionalidade
-  const [crea, setCrea] = useState(''); // nascimento
-  const [dataCrea, setFilDataCrea] = useState(''); // filcodigo
+  const [apelido, setApelido] = useState('');
+  const [telefone, setTelefone] = useState(''); 
+  const [crea, setCrea] = useState('');
+  const [dataCrea, setFilDataCrea] = useState('');
   const [checked, setChecked] = useState(false);
 
   const { id } = useParams();
 
   function IfCrud() {
-    console.log('Id Elenco: ' + id + ' - ' + idBoolean)
-    if (id === 0) {
+    console.log('Id Engenheiro: ' + id + ' - ' + idBoolean)
+    if (id == 0) {
       idBoolean = true;
     } else {
     }
@@ -52,7 +37,7 @@ export default function EngenheiroEditar() {
       console.log('Engenheiro: ' + id + ' - ' + idBoolean)
       if (id == 0) {
         setChecked(true);
-        console.log('Inclusão de novo registro!')
+        console.log('Novo Registro Inserido!')
       } else {
         const { data } = await urlApi.get('/engenheiro/' + id);
         console.log(data)
@@ -80,21 +65,21 @@ export default function EngenheiroEditar() {
 
     try {
       if (nome.length === 0) {
-        alert('Insira um nome válido')
+        alert('Insira o nome')
       } else {
         console.log("Codigo Engenheiro: ", id)
-        if (id == 0) {
-          console.log("Inclusão de Registro!")
+        if (id === 0) {
+          console.log("Registro Incluído!")
           await urlApi.post('engenheiro', data)
-            .then(response => alert("Inserção Realizada com Sucesso!!!!"))
+            .then(response => alert("Registro Incluído com Sucesso!"))
         } else {
-          console.log("Alteração de Registro! ", id)
+          console.log("Registro Alterado! ", id)
           await urlApi.put('/engenheiro/' + id, data)
-            .then(response => alert("Alteração Realizada com Sucesso!!!!"))
+            .then(response => alert("Registro Alterado com Sucesso"))
         }
       }
     } catch (error) {
-      alert('Erro no cadastro, tente novamente.')
+      alert('Erro. Tente novamente.')
     }
   }
 

@@ -1,3 +1,3 @@
-const controllersIndex = require('../controllers/indexControllers.js');
+const controllerIndex = require('../controllers/indexControllers.js');
 
-server.get('/', controllersIndex.indexControllers);
+server.get('/', controllerIndex.indexControllers);

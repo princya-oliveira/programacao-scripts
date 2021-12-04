@@ -1,9 +1,7 @@
-const controllers = require('../controllers/engenheiroControllers.js');
+const controller = require('../controllers/engenheiroControllers.js');
 
-server.get('/engenheiro', controllers.engenheiroGetAll);
+server.get('/engenheiro', controller.engenheiroGetAll);
+server.get('/engenheiro/:id', controller.engenheiroGetById)
 
-server.get('/engenheiro/:id', controllers.engenheiroGetById)
-
-server.post('/engenheiro', controllers.engenheiroNew)
-
-server.put('/engenheiro/:id', controllers.engenheiroEdit)
+server.put('/engenheiro/:id', controller.engenheiroEdit)
+server.post('/engenheiro', controller.engenheiroNew)

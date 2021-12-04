@@ -1,6 +1,6 @@
 import React from "react";
 
-const divStyle = {
+const div = {
   height: '5vh',
   marginTop: '0.5vh',
   backgroundColor: '#9BBF65',
@@ -12,9 +12,8 @@ const divStyle = {
 export default function Rodape() {
   return (
     <>
-      <div
-        style={divStyle}>
-        <h6>Desenvolvido por Princya Oliveira</h6>
+      <div style={div}>
+        <h6>Desenvolvido por Princya Oliveira</h6> 
       </div>
     </>
   )

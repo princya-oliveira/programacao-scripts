@@ -1,4 +1,4 @@
-const db = require('../../config/db.js');
+const database = require('../../config/conexao.js');
 
 module.exports = {
   obraGetAll,
@@ -10,7 +10,7 @@ module.exports = {
 function obraGetAll(require, response) {
   console.log('Rota Obra Encontrada!');
   const sqlGet = `SELECT * FROM  obra`
-  db.query(sqlGet, (err, result) => {
+  database.query(sqlGet, (err, result) => {
     if (err) console.log(err);
     response.json(result)
   })
@@ -21,7 +21,7 @@ function obraGetById(require, response) {
   console.log('Parametro Esperado Get: ' + id);
   const sqlGet = `SELECT * FROM obra WHERE obr_codigo = ?`
 
-  db.query(sqlGet, [id], (err, result) => {
+  database.query(sqlGet, [id], (err, result) => {
     if (err) {
       console.log(err);
     } else {
@@ -33,13 +33,13 @@ function obraGetById(require, response) {
 function obraNew(require, response) {
   const dados = require.body
   console.log(dados);
-  console.log(`Gravando Nova Obra!`);
+  console.log(`Salvando Nova Obra!`);
 
   dados.obr_codigo = null;
 
   const sqlPost = `INSERT INTO obra SET ?`
 
-  db.query(sqlPost, dados, (err, result) => {
+  database.query(sqlPost, dados, (err, result) => {
     if (err) console.log(err);
     response.send(result)
   })
@@ -57,7 +57,7 @@ function obraEdit(require, response) {
     "' , eng_codigo = '" + dados.eng_codigo +
     "' WHERE obr_codigo = '" + dados.obr_codigo + "'"
 
-  db.query(sqlPut, (err, result) => {
+  database.query(sqlPut, (err, result) => {
     if (err) console.log(err);
     response.send(result)
   })

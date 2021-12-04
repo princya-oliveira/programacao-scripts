@@ -1,9 +1,7 @@
-const controllers = require('../controllers/obraControllers.js');
+const controller = require('../controllers/obraControllers.js');
 
-server.get('/obra', controllers.obraGetAll);
+server.get('/obra', controller.obraGetAll);
+server.get('/obra/:id', controller.obraGetById)
 
-server.get('/obra/:id', controllers.obraGetById)
-
-server.post('/obra', controllers.obraNew)
-
-server.put('/obra/:id', controllers.obraEdit)
+server.put('/obra/:id', controller.obraEdit)
+server.post('/obra', controller.obraNew)

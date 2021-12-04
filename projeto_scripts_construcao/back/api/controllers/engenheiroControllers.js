@@ -1,4 +1,4 @@
-const db = require('../../config/db.js');
+const database = require('../../config/conexao.js');
 
 module.exports = {
   engenheiroGetAll,
@@ -10,7 +10,7 @@ module.exports = {
 function engenheiroGetAll(require, response) {
   console.log('Rota Engenheiro Encontrada!');
   const sqlGet = `SELECT * FROM  engenheiro`
-  db.query(sqlGet, (err, result) => {
+  database.query(sqlGet, (err, result) => {
     if (err) console.log(err);
     response.json(result)
   })
@@ -21,7 +21,7 @@ function engenheiroGetById(require, response) {
   console.log('Parametro Esperado Get: ' + id);
   const sqlGet = `SELECT * FROM engenheiro WHERE eng_codigo = ?`
 
-  db.query(sqlGet, [id], (err, result) => {
+  database.query(sqlGet, [id], (err, result) => {
     if (err) {
       console.log(err);
     } else {
@@ -32,13 +32,13 @@ function engenheiroGetById(require, response) {
 
 function engenheiroNew(require, response) {
   const dados = require.body
-  console.log(`Gravando Novo Engenheiro!`);
+  console.log(`Salvando Novo Engenheiro!`);
 
   dados.eng_codigo = null;
 
   const sqlPost = `INSERT INTO engenheiro SET ?`
 
-  db.query(sqlPost, [dados], (err, result) => {
+  database.query(sqlPost, [dados], (err, result) => {
     if (err) console.log(err);
     response.send(result)
   })
@@ -46,7 +46,6 @@ function engenheiroNew(require, response) {
 
 function engenheiroEdit(require, response) {
   const dados = require.body
-  console.log(dados);
   console.log("Alterando Registro de Engenheiros...", dados);
 
   const sqlPut = "UPDATE engenheiro SET eng_nome = '" + dados.eng_nome +
@@ -56,7 +55,7 @@ function engenheiroEdit(require, response) {
     "' , eng_datacrea = '" + dados.eng_datacrea +
     "' WHERE eng_codigo = '" + dados.eng_codigo + "'"
 
-  db.query(sqlPut, (err, result) => {
+  database.query(sqlPut, (err, result) => {
     if (err) console.log(err);
     response.send(result)
   })

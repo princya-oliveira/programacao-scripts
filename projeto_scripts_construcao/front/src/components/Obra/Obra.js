@@ -3,21 +3,16 @@ import { useEffect, useState } from 'react';
 import urlApi from '../../service/api';
 import TabelaObra from "../Tabelas/TabelaObra";
 
-const divStyle = {
+const div = {
   height: '100%',
   border: '3px ridge black',
   backgroundColor: '#594D42',
   textAlign: 'center',
   color: 'white'
 }
+const linha = { marginTop: '5vh' }
+const linha2 = { marginTop: '5vh' }
 
-const rowStyle = {
-  marginTop: '5vh'
-}
-
-const rowStyle2 = {
-  marginTop: '5vh'
-}
 export default function Obra() {
 
   const [obra, setObra] = useState([])
@@ -32,12 +27,12 @@ export default function Obra() {
       <form>
         <div
           id="idObra"
-          style={divStyle}>
+          style={div}>
           <div
             className="container-fluid">
             <div
               className="row"
-              style={rowStyle}>
+              style={linha}>
               <div
                 className="col-md-12">
                 <h1> Cadastro de Obras </h1>
@@ -45,7 +40,7 @@ export default function Obra() {
             </div>
           </div>
           <div
-            style={rowStyle2}>
+            style={linha2}>
             <TabelaObra
               items={obra}
               chave={'/obra/'}
