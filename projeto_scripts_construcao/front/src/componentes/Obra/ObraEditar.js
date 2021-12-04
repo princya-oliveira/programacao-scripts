@@ -3,11 +3,11 @@ import urlApi from '../../service/api';
 import { useEffect, useState } from 'react';
 import { useParams, useHistory } from "react-router-dom";
 
+const button = { marginTop:'5vh' }
 const label = { color: 'white' }
 const h1 = { color:'white' }
-const button = { marginTop:'10vh' }
 const formStyle = {marginTop: '5vh'}
-const inputStyle = { marginTop: '2.5vh' }
+const inputStyle = { marginTop: '2vh' }
 
 export default function ObraEditar() {
 
@@ -88,19 +88,14 @@ export default function ObraEditar() {
       <div >
         <form
           onSubmit={handleObra}
-          className="container-fluid" style={formStyle}>
+          className="container-xl" style={formStyle}>
           <div
             className="row">
-            <div
-              className="col-md-12 text-center">
-              <h1
-                style={h1}> Cadastro de Nova Obra </h1>
+            <div className="col-md-12 text-center">
+              <h1 style={h1}> Editar/Cadastrar Obra </h1>
             </div>
-            <div
-              className="form-group col-md-6 mb-3"
-              style={inputStyle}>
-              <label
-                style={label}> Código </label>
+            <div className="form-group col-md-6 mb-3" style={inputStyle}>
+              <label style={label}> Código </label>
               <input
                 type="text"
                 className="form-control form-control-lg"
@@ -171,7 +166,7 @@ export default function ObraEditar() {
               className="col-md-6 text-center">
               <button
                 type="submit"
-                className="btn btn-dark btn-lg"
+                class="btn btn-outline-dark btn-lg"
                 onClick={() => history.push('/obra')}
                 style={button}> Voltar </button>
             </div>
@@ -179,7 +174,7 @@ export default function ObraEditar() {
               className="col-md-6 text-center">
               <button
                 type="submit"
-                className="btn btn-dark btn-lg"
+                class="btn btn-outline-dark btn-lg"
                 style={button}> Salvar </button>
             </div>
           </div>

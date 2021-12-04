@@ -5,10 +5,11 @@ import TabelaObra from "../Tabelas/TabelaObra";
 
 const div = {
   height: '100%',
-  border: '3px ridge black',
+  border: '3px ridge white',
   backgroundColor: '#594D42',
   textAlign: 'center',
-  color: 'white'
+  color: 'white',
+  marginLeft: '15px'
 }
 const linha = { marginTop: '5vh' }
 const linha2 = { marginTop: '5vh' }

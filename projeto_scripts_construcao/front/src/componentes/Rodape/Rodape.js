@@ -5,7 +5,7 @@ const div = {
   marginTop: '0.5vh',
   backgroundColor: '#9BBF65',
   textAlign: 'center',
-  paddingTop: '1vh',
+  paddingTop: '1.3vh',
   color: 'black',
 }
 

@@ -6,11 +6,11 @@ import Engenheiro from "../Engenheiro/Engenheiro";
 import EngenheiroEditar from "../Engenheiro/EngenheiroEditar";
 
 const div = {
-  minHeight: '73.8vh',
+  minHeight: '68.1vh',
   marginTop: '0.5vh',
   paddingTop: '2vh',
   backgroundColor: '#736355',
-  fontSize: '18pt'
+  fontSize: '16pt'
 }
 
 export default function AreaDados() {

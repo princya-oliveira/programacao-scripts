@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 
 const label = { color: 'white' }
 const h1 = { color:'white' }
-const button = { marginTop:'10vh' }
+const button = { marginTop:'5vh' }
 const formStyle = {marginTop: '5vh'}
 const inputStyle = { marginTop: '2.5vh' }
 
@@ -88,13 +88,13 @@ export default function EngenheiroEditar() {
       <div >
         <form
           onSubmit={handleEngenheiro}
-          className="container-fluid" style={formStyle}>
+          className="container-xl" style={formStyle}>
           <div
             className="row">
             <div
               className="col-md-12 text-center">
               <h1
-                style={h1}> Cadastro de Novo Engenheiro </h1>
+                style={h1}> Editar/Cadastrar Engenheiro </h1>
             </div>
             <div
               className="form-group col-md-6 mb-3"
@@ -171,7 +171,7 @@ export default function EngenheiroEditar() {
               className="col-md-6 text-center">
               <button
                 type="submit"
-                className="btn btn-dark btn-lg"
+                className="btn btn-outline-dark btn-lg"
                 onClick={() => history.push('/engenheiro')}
                 style={button}> Voltar </button>
             </div>
@@ -179,7 +179,7 @@ export default function EngenheiroEditar() {
               className="col-md-6 text-center">
               <button
                 type="submit"
-                className="btn btn-dark btn-lg"
+                className="btn btn-outline-dark btn-lg"
                 style={button}> Salvar </button>
             </div>
           </div>

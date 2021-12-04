@@ -1,14 +1,13 @@
 import React from "react";
 import { useHistory } from 'react-router-dom';
 
-const menuStyle = {
+const menu = {
   minHeight: '10vh',
   backgroundColor: '#9BBF65',
   paddingLeft: '1vw',
   paddingTop: '2vh'
 }
-
-const btnStyle = {
+const btn = {
   margin: '0.5%',
   minWidth: '12vw',
   marginLeft: '3vw',
@@ -22,15 +21,15 @@ export default function Menu() {
   return (
     <>
       <div
-        style={menuStyle}>
+        style={menu}>
         <button
           type="button"
-          style={btnStyle}
+          style={btn}
           className="btn btn-dark"
           onClick={() => history.push('/obra')}> Obra </button>
         <button
           type="button"
-          style={btnStyle}
+          style={btn}
           className="btn btn-dark"
           onClick={() => history.push('/engenheiro')}> Engenheiro </button>
       </div>

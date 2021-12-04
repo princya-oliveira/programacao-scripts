@@ -1,11 +1,11 @@
 import React from "react";
 
 const navStyle = {
-  minHeight: '10vh',
+  minHeight: '15vh',
   color: 'white',
   textAlign: 'center',
   backgroundColor: '#736355',
-  paddingTop: '2vh'
+  paddingTop: '5vh'
 }
 
 export default function Cabecalho() {

@@ -5,10 +5,11 @@ import TabelaEngenheiro from "../Tabelas/TabelaEngenheiro";
 
 const divStyle = {
   height: '100%',
-  border: '3px ridge black',
+  border: '3px ridge white',
   backgroundColor: '#594D42',
   textAlign: 'center',
-  color: 'white'
+  color: 'white',
+  marginLeft: '15px'
 }
 
 const rowStyle = {

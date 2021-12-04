@@ -2,7 +2,7 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 
 const divFormat = { color: 'white' }
-const botao = { marginTop: '10vh' }
+const botao = { marginTop: '5vh' }
 const aEstilo = { textAlign: 'center'}
 
 export default function TabelaObra(props) {
@@ -24,7 +24,7 @@ export default function TabelaObra(props) {
           <td style={{ textAlign:'center' }}> {item.obr_dtinicio} </td>
           <td style={{ textAlign:'center' }}> {item.eng_codigo} </td>
 
-          <td id="editar"> <a className="btn btn-dark"
+          <td id="editar"> <a className="btn btn-outline-dark"
               href={props.chave + item.obr_codigo}> Editar </a></td>
         </tr>
       )
